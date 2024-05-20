@@ -29,7 +29,6 @@ function App() {
   function resetInput(e) { 
     e.preventDefault(); 
     inputRef.current.value = 0;
-    // setResult((result) => result = 0); 
   }; 
  
   function resetResult(e) { 
@@ -43,10 +42,7 @@ function App() {
         <h1>Simplest Working Calculator</h1> 
       </div> 
       <form> 
-        <p ref={resultRef}> 
-          {/* add the value of the current total */} 
-          {result}
-        </p> 
+        <p ref={resultRef}> {result} </p> 
         <input
           pattern="[0-9]" 
           ref={inputRef} 
